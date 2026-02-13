@@ -31,21 +31,18 @@ let giftCodeValue = "XXXX-XXXX-XXXX-XXXX";
 // Random position generator - MORE MOVEMENT, stays in viewport
 const getRandomPosition = () => {
   const positions = [
-
+    { top: '20%', left: '50%' },
+    { top: '30%', left: '50%' },
     { top: '40%', left: '50%' },
+    { top: '50%', left: '50%' },
+    { top: '60%', left: '50%' },
     { top: '70%', left: '50%' },
-    { top: '40%', left: '55%' },
-    { top: '40%', right: '5%' },
-    { top: '50%', left: '85%' },
-    { top: '50%', right: '65%' },
-    { top: '30%', left: '70%' },
-    { top: '60%', right: '60%' },
-    { top: '25%', left: '65%' },
-    { top: '65%', right: '60%' },
-   
+    { top: '80%', left: '50%' },
   ];
+
   return positions[Math.floor(Math.random() * positions.length)];
 };
+
 
 // Gift card interaction
 const initGiftCard = () => {
