@@ -414,19 +414,7 @@ const animationTimeline = () => {
       },
       "party"
     )
-    .staggerTo(
-      ".eight svg",
-      5,
-      {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4,
-      },
-      0.3,
-      "-=0.5"
-    )
+
     .to(".six", 0.5, {
       opacity: 0,
       scale: 0.8,
@@ -539,4 +527,24 @@ resolveFetch().then(animationTimeline());
 document.getElementById("replay").addEventListener("click", function () {
   location.reload();
 });
+// ❤️ Falling Hearts Effect
+function startHearts() {
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 8000);
+  }, 400);
+}
+
+// Start hearts
+startHearts();
 
