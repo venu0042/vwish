@@ -656,7 +656,7 @@ body {
 .heart {
   position: fixed;
   top: -10px;
-  font-size: 26px;
+  font-size: 38px;
   animation: fall 6s linear infinite;
   opacity: 0.8;
   z-index: 9999;

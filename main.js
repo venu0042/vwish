@@ -542,7 +542,7 @@ function startHearts() {
     setTimeout(() => {
       heart.remove();
     }, 8000);
-  }, 400);
+  }, 800);
 }
 
 // Start hearts
