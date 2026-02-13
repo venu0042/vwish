@@ -533,3 +533,10 @@ const resolveFetch = () => {
 generateMemoryPhotos();
 initGiftCard();
 resolveFetch().then(animationTimeline());
+
+
+// Replay button - reload page
+document.getElementById("replay").addEventListener("click", function () {
+  location.reload();
+});
+
