@@ -652,3 +652,20 @@ body {
         padding: 10px;
     }
 }
+/* Falling Hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 26px;
+  animation: fall 6s linear infinite;
+  opacity: 0.8;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
